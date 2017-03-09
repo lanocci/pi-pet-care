@@ -1,8 +1,8 @@
 # coding: utf-8
 class CheckTemparature
   def initialize
-    @d = nil
-    @t = nil
+    @date = nil
+    @time = nil
     @temparature = nil
   end
   attr_accessor :temparature
@@ -23,8 +23,8 @@ class CheckTemparature
 
     # format output
     tmp = output.split(" ")
-    @d = tmp[0]
-    @t = tmp[1]
+    @date = tmp[0]
+    @time = tmp[1]
     @temparature = tmp[2].to_f
   end
 

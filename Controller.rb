@@ -14,7 +14,7 @@ if ARGV[0] == 'cron' then
   cron_result.call_temper
 
   # get connection to mysql
-  con = Mysql::new('127.0.0.1', 'toto', 'P@ssword01', 'pet_care')
+  con = Mysql::new(database-addr, db-user, db-password, db-name)
 
   # insert temparature info into database
   con.query("insert into pet_care.temparature (temparature) values (#{cron_result.temparature})")
